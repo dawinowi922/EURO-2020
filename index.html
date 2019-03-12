@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        var dzisiaj = new Date();
+        var dzien = dzisiaj.getDate();
+        var miesiac = dzisiaj.getMonth() + 1;
+        var rok = dzisiaj.getFullYear();
+        var godzina = dzisiaj.getHours();
+        var minuta = dzisiaj.getMinutes();
+        var sekunda = dzisiaj.getSeconds();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="clickMe">Mistrzostwa Europy - EURO 2020</h1>
+    <div id="panel">
+        <from>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password">
+            <div id="lower">
+                <input type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
+                <input type="submit" value="Zaloguj">
+            </div>
+        </from>
+    </div>
+    <div id="zegar"></div>
+    <script type="text/javascript">
+        document.getElementById("zegar").innerHTML = dzien+"/"+miesiac+"/"+rok+""
+    </script>
+    <embed src="https://www.youtube.com/embed/AntVoMQQneM?controls=0" width=400 height="250" autoplay>
+    <img src="http://www.logo-designer.co/wp-content/uploads/2016/09/uefa-euro-2020-logo-design-3.png">
+    <p>Witam fana piłki nożnej! Właśnie teraz rozpoczynamy emocjonujący miesiąc zmagań na 12 stadionach w 12 państwach. Miejmy tylko nadzieję, że zarówno wielkie emocje będą nam towarzyszyć w trakcie meczów, jak i podczas typowania wyników.</p>
+</body>
+
+</html>
